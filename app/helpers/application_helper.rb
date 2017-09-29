@@ -16,6 +16,10 @@ module ApplicationHelper
     end 
   end
 
+  def copyright_generator
+      RastlynViewTool::Renderer.copyright 'Gabriele Baldocci', 'All rights reserved'
+  end
+
   def is_admin?
     logged_in?(:site_admin)
   end

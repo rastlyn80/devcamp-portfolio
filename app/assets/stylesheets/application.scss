@@ -67,6 +67,8 @@ body {
 
 .masthead {
   margin-bottom: 2rem;
+  z-index: 999;
+  background-color: #333;
 }
 
 .masthead-brand {
@@ -123,7 +125,14 @@ body {
  */
 
 .mastfoot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
   color: rgba(255,255,255,.5);
+  z-index:999;
+  background-color: #333;
 }
 
 
@@ -159,4 +168,21 @@ body {
   .cover-container {
     width: 55rem;
   }
+}
+
+/*
+ * CUSTOM STYLES
+ */
+.starter-template {
+  padding: 9rem 1.5rem;
+  text-align: center;
+}
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
 }
